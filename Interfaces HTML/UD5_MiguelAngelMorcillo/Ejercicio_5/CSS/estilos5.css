@@ -1,0 +1,33 @@
+.container {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.nowrap{
+display: flex;
+flex-wrap: nowrap;
+gap: 20px;
+}
+
+.wrap{
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.reverse{
+display: flex;
+flex-wrap: wrap-reverse;
+gap: 20px;
+}
+
+.box {
+background-color: blue;
+border: 5px solid black;
+width: 100px;
+height: 100px;
+text-align: center;
+align-content: center;
+font-size: 30px;
+}

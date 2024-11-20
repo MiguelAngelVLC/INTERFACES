@@ -1,0 +1,46 @@
+.container {
+display: grid;
+gap: 20px;
+}
+
+.flex-box {
+display: flex;
+gap: 20px;
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.box1 {
+background-color: blue;
+width: 200px;
+height: 300px;
+text-align: center;
+align-content: center;
+}
+
+.box2 {
+background-color: green;
+width: 400px;
+height: 300px;
+text-align: center;
+align-content: center;
+}
+
+.box3 {
+background-color: yellow;
+width: 500px;
+height: 300px;
+text-align: center;
+align-content: center;
+}
+
+.box4 {
+background-color: red;
+width: 700px;
+height: 300px;
+text-align: center;
+align-content: center;
+}

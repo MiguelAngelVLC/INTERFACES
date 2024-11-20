@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  /* NO USAR FLEX
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; */
+  margin: 0;
+  background-color: #f3f3f3;
+}
+
+.container {
+  width: 300px;
+  margin: 50px auto; /* Centra el contenedor horizontalmente y añade espacio superior */
+  text-align: center;
+  padding: 20px;
+  background-color: #7badb9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado */
+}
+
+header {
+  margin-bottom: 20px;
+  text-align: left;
+  position: relative;
+  height: 50px;
+  background-color: blue;
+}
+
+header img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 15px;
+  margin: 0;
+  line-height: 50px; /* Alinea verticalmente el texto con la imagen */
+  padding-left: 60px; /* Deja espacio para la imagen */
+}
+
+.avatar {
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.formulario {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.formulario label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.formulario input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.boton {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.boton:hover {  /* Cambia de color al pulsar boton */
+  background-color: #0056b3;
+}
+
+.recuperar {
+  margin-top: 15px;
+  font-size: 12px;
+  color: #180f8d;
+}

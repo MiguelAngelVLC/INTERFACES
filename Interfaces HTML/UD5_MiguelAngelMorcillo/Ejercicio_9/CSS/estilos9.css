@@ -1,0 +1,240 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6; /* Separacion de lineas */
+}
+
+/* Encabezado fijo */
+.header {
+    background-color: #1C70CE;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    /* La posición en la web es fija respecto a los bordes de su contenedor top: 0 y left: 0 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header img {
+    float: left; /* Ubica al elemento al lado izquierdo o derecho de su contenedor */
+    width: 70px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* Barra de navegación */
+.barra {
+    background-color: #FFB643;
+    overflow: hidden; /* El desbordamiento se recorta y el resto del contenido será invisible */
+    position: absolute;
+    width: 100%
+}
+
+.barra a {
+    float: left;
+    display: block; /* Hace que el comportamiento del elemento sea como un bloque. */
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.barra a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Contenedor principal del panel */
+.container {
+    display: flex;
+    margin-top: 80px; /* Espacio para el encabezado fijo */
+    height: calc(100vh - 80px);
+}
+
+/* Menú lateral izquierdo */
+.menu {
+    margin-top: 50px; /* Para bajarlo un poco */
+    width: 20%;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+}
+
+.menu h2 {
+    margin-bottom: 1rem;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.menu a:hover {
+    background-color: #ddd;
+}
+
+/* Sección principal (contenido central) */
+.centro {
+    flex: 1;
+    padding: 1rem;
+}
+
+/* Introduccion de ejercicio anterior */
+       /* Contenido principal */
+        .main-cuerpo {
+            width: 70%;
+            padding: 20px;
+        }
+        .main-cuerpo h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .calendario {
+            width: 100%;
+            height: 300px;
+            background-color: #e6e6e6;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: black;
+        }
+        .semana {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .dia {
+            text-align: center;
+            width: 18%;
+        }
+        .dia img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .boton {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .boton:hover {
+            background-color: #45a049;
+        }
+
+/* Barra lateral ejercicio anterior */
+
+        /* Panel derecho */
+        .perfil {
+            width: 100%;
+            padding: 20px;
+            background-color: #f3f3f3;
+            text-align: center;
+        }
+        .perfil img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .perfil p {
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+/* Barra lateral derecha (formulario) */
+.form-container {
+    margin-top: 50px; /* Para bajarlo un poco */
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-left: 1px solid #ccc;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-container input, .form-container select, .form-container button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+        /* Pie de página */
+        footer {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+        footer p {
+            margin: 5px 0;
+            font-size: 12px;
+        }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 768px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .menu, .form-container {
+        width: 100%;
+        border: none;
+    }
+
+    .content {
+        margin-top: 1rem;
+    }
+}

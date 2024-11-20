@@ -1,0 +1,46 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfcdc;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.header {
+    background-color: #83c5be;
+    color: black;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Contenedor principal con flexbox */
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en varias filas */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    gap: 10px; /* Espaciado entre las imágenes */
+    padding: 1rem;
+}
+
+/* Estilo de las imágenes */
+.contenedor-flex img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Mantiene el contenido dentro del tamaño especificado */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Efecto de hover */
+}
+
+/* Efecto hover en las imágenes */
+.contenedor-flex img:hover {
+    transform: scale(1.1); /* Amplía ligeramente la imagen al pasar el ratón */
+    border-color: #333;
+}

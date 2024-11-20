@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9</title>
+    <link rel="stylesheet" href="CSS/estilos9.css">
+</head>
+
+<body>
+<header class="header">
+    <img src="images/Logo%20Guarderia.png" alt="Logotipo Guardería IES Camp de Morvedre">
+    <h1>Guardería IES Camp de Morvedre</h1>
+</header>
+
+<!-- Barra de navegación -->
+<nav class="barra">
+    <a href="#inicio">Inicio</a>
+    <a href="#camp">CAMP</a>
+    <a href="#metodologia">Metodología</a>
+    <a href="#informacion">Información y Admisión</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#comedor">Comedor</a>
+    <a href="#noticias">Noticias</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<div class="container">
+
+    <!-- Menu lateral izquierdo -->
+    <aside class="menu">
+        <h2>Dia de la semana</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Lunes</a></li>
+                <li><a href="#">Martes</a></li>
+                <li><a href="#">Miercoles</a></li>
+                <li><a href="#">Jueves</a></li>
+                <li><a href="#">Viernes</a></li>
+            </ul>
+        </nav>
+    </aside>
+<div class="centro">
+        <!-- Contenido principal -->
+        <main class="cuerpo">
+
+            <h2>Menú Semanal</h2>
+
+            <!-- Calendario -->
+            <div class="calendario">
+                <h2>Calendario de Octubre 2024</h2>
+                <form>
+                    <label>Elija la fecha que desee observar:
+                        <input type="date" name="party" min="2024-04-01" max="2017-04-30"/>
+                    </label>
+                </form>
+            </div>
+
+            <!-- Imágenes de días de la semana -->
+            <div class="semana">
+                <div class="dia">
+                    <h3>Lunes</h3>
+                    <img src="images/menu/Lunes.png" alt="Menú Lunes">
+                </div>
+                <div class="dia">
+                    <h3>Martes</h3>
+                    <img src="images/menu/Martes.png" alt="Menú Martes">
+                </div>
+                <div class="dia">
+                    <h3>Miércoles</h3>
+                    <img src="images/menu/Miercoles.png" alt="Menú Miércoles">
+                </div>
+                <div class="dia">
+                    <h3>Jueves</h3>
+                    <img src="images/menu/Jueves.png" alt="Menú Jueves">
+                </div>
+                <div class="dia">
+                    <h3>Viernes</h3>
+                    <img src="images/menu/Viernes.png" alt="Menú Viernes">
+                </div>
+            </div>
+
+            <!-- Botón de confirmación -->
+            <button class="boton">Comió el menú</button>
+
+        </main>
+</div>
+
+<!--Barra lateral ejercicio anterior-->
+    <aside class="form-container">
+
+        <!-- Panel derecho (Usuario) -->
+        <div class="perfil">
+            <img src="images/FotoPerfil.png" alt="Foto de Usuario">
+            <p>Nombre de Usuario</p>
+        </div>
+
+        <!-- Datos Barra lateral ejercicio anterior -->
+
+        <h2>Formulario de Datos</h2>
+        <form>
+            <label for="name">Campo 1:</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Campo 2:</label>
+            <input type="email" id="email" name="email">
+            <label for="role">Campo 3:</label>
+            <select id="role" name="role">
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option>Opción 3</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </aside>
+</div>
+
+<!-- Pie de página -->
+<footer>
+    <p>2024 Generalitat</p>
+    <p>Conselleria de Educación, Cultura, Universidad y Empleo</p>
+    <p>
+        <a href="#aviso">Aviso Legal</a> |
+        <a href="#mapa">Mapa Web</a> |
+        <a href="#contacto">Contacto</a> |
+        <a href="#accesibilidad">Accesibilidad</a>
+    </p>
+</footer>
+
+</body>
+</html>
